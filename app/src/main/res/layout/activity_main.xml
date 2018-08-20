@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.baking.MainActivity"
+    android:background="#1a1a1a"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome To The Baking App"
+        android:textColor="#9f9f9f"
+        android:fontFamily="serif"
+        android:textSize="20dp"
+        android:id="@+id/hel"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foodList"
+        android:background="#252525"
+        android:layout_margin="10dp"
+
+        />
+
+
+
+
+
+
+</LinearLayout>

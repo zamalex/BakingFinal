@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.dell.baking.StepDetails"
+    android:background="#1a1a1a">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarId"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:title="Go Back"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#FFFFFF"
+
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="No Available Video"
+           android:visibility="invisible"
+           android:id="@+id/gone"
+           android:textColor="#9f9f9f"
+           android:fontFamily="serif"
+           />
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+
+            android:layout_margin="10dp"
+
+
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/step_full_desc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Desc Goes Here"
+        android:layout_weight="1"
+        android:textColor="#9f9f9f"
+        android:fontFamily="serif"
+        android:layout_margin="10dp"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/thumb"
+        android:src="@drawable/placeholder"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>
